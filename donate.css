@@ -1,0 +1,34 @@
+html {
+height: 100%;
+width: 100%;   
+}
+
+
+h1 {
+    color:blue;
+    text-align: center;
+}
+
+.happyDog {
+height: 250px;
+width: 350px;
+margin: auto;
+display: block;
+}
+
+.headerOne {
+text-align: center ;
+}
+
+.paragraphOne {
+    text-align:center;
+}
+
+h2 {
+text-align:left;
+
+}
+
+.list {
+    font-weight: bold;
+}
