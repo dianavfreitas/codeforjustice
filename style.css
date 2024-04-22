@@ -19,29 +19,60 @@ header{
 }
 
 .logo{
-    font-size: 30px;
-    font-weight: bold;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+nav{
+    height: 6rem;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 100px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     color: black;
 }
-
-.hamburger{
+nav a:hover{
+    border-radius: 30px;
+    color: #AA78A6;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: pink;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
-
-.nav-menu ul{
-    display: block;
-    list-style: none;
+.sidebar li{
+    width: 100%;
 }
-
-.nav-menu ul li a{
-    display: block;
-    color: black;
-    font-size: 25px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin: 0 5px;
-    list-style: none;
+.sidebar a{
+    width: 100%;
 }
 
 .pic{
