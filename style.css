@@ -71,6 +71,7 @@ nav a:hover{
 .sidebar li{
     width: 100%;
 }
+
 .sidebar a{
     width: 100%;
 }
@@ -108,26 +109,46 @@ p{
 }
 
 .section{
-    background-color: #AA78A6;
+    background-color: #B4D6D3;
 }
 
-.sec2{
+.image-grid{
     background-color: white;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    height: 500px;
-    gap: 50px;
-    margin-left: 620px;
-    font-size: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 15px;
 }
 
 .pet{
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     height: 220px;
     width: auto;
     justify-content: center;
+}
+
+.s3{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+.p2{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+}
+
+.section3{
+    background-color: #B4D6D3;
+    margin-bottom: 100px;
 }
 
 .copyright {
@@ -136,27 +157,33 @@ p{
     justify-content: center;
     padding: 15px;
 }
+
 .footer-container-link {
     display: grid;
     grid-template-columns: repeat(5, 100px);
     justify-content: center;
     margin-bottom: 50px;
 }
+
 .footer-link:link {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
 .footer-link-visted {
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
 .footer-link:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
 }
+
 .footer-link:visted:hover {
     color:rgb(0, 0, 0);
 }
+
 .icon-container {
     display: grid;
     grid-template-columns: repeat(4, 80px);
@@ -165,6 +192,7 @@ p{
     border-top: 1px solid #ccc;
     padding-top: 10px;
 }
+
 .footer-header {
     display: flex;
     justify-content: center;
@@ -221,9 +249,11 @@ p{
         font-size: 20px;
     }
 
-    .sec2 {
-        margin-left: 0;
-        justify-content: space-around;
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 15px;
     }
 
     .pet {
