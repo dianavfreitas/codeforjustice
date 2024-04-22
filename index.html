@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <title>Pawsitively Rescued</title>
+    <link rel="icon" type="image/x-icon" href="/images/cat.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
 </head>
-    <header>
-        <div class="logo">Pawsitively Rescued</div>
-        <nav>
-            <div class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="/home">Home</a></li>
-                <li><a href="/adopt">Adopt</a></li>
-                <li><a href="/foster">Foster</a></li>
-                <li><a href="/donate">Donate</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+<nav>
+    <img src="images/logo.png" class="logo">
+    <ul class="sidebar">
+        <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">Adopt</a></li>
+        <li class="hideOnMobile"><a href="#">Foster</a></li>
+        <li class="hideOnMobile"><a href="#">Donate</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Adopt</a></li>
+        <li><a href="#">Foster</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Contact</a></li>
+        <li onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        
+    </ul>
+    <div class="menu-icon"></div>
+</nav>
 <body>
     <img src="images/catdog.png" class="pic">
     <h1>Adopt. Don't Shop</h1>
