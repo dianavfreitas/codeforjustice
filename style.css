@@ -27,11 +27,13 @@ header{
     align-items: center;
     margin-left: 100px;
 }
+
 nav{
     height: 6rem;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 nav ul{
     width: 100%;
     list-style: none;
@@ -39,9 +41,11 @@ nav ul{
     justify-content: flex-end;
     align-items: center;
 }
+
 nav li{
     height: 100px;
 }
+
 nav a{
     height: 100%;
     padding: 0 30px;
@@ -54,6 +58,7 @@ nav a:hover{
     border-radius: 30px;
     color: #AA78A6;
 }
+
 .sidebar{
     position: fixed;
     top: 0;
@@ -68,6 +73,7 @@ nav a:hover{
     align-items: flex-start;
     justify-content: flex-start;
 }
+
 .sidebar li{
     width: 100%;
 }
@@ -258,7 +264,7 @@ p{
 
     .pet {
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         height: 100px;
     }
 }
