@@ -61,18 +61,23 @@ header {
     text-align: center;
 }
 
+.foster-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+}
+
 .foster-image-dog {
-    height: 500px;
-    width: 550px;
+    width: 60%;
+    margin: auto;
 }
 
 .foster-image-cat {
-    height: 400px;
-    width: 700px;
+    width: 60%;
     margin-top: 20px;
 }
 
-.foster-container {
+/* .foster-container {
     display: flex;
     flex-direction: column;
 }
@@ -87,7 +92,7 @@ header {
     display: flex;
     flex-direction: column;
     margin: 20px;
-}
+} */
 
 .foster-info {
     margin: 20px;
@@ -140,4 +145,11 @@ header {
     justify-content: center;
     margin-top: 10px;
     font-size: 15px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .foster-image-container {
+        grid-template-columns: 1fr;
+}
 }
