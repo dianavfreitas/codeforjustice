@@ -214,6 +214,7 @@ p{
 
     .nav-menu {
         margin-left: 100px;
+        display: none;
     }
 
     .sec2 {
@@ -230,6 +231,7 @@ p{
 
     .nav-menu {
         margin-left: 50px;
+        display: none;
     }
 
     .sec2 {
@@ -253,6 +255,11 @@ p{
     .nav-menu {
         margin-left: 20px;
         font-size: 20px;
+        display: none;
+    }
+
+    .sidebar{
+        display: block;
     }
 
     .image-grid {
