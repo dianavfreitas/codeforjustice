@@ -19,6 +19,7 @@ header {
     justify-content: center;
     align-self: center;
     margin: auto;
+    margin-top: 25px;
 
 }
 
@@ -29,10 +30,8 @@ main {
 .introduction {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 1fr;
-    grid-column-gap: px;
+    grid-template-rows: repeat(1fr);
     grid-row-gap: 15px;
-    width: 100%;
 }
 
 .intro-div {
@@ -43,9 +42,12 @@ main {
 .intro-text {
     color: #686d6d;
     line-height: 2em;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
 }
 
-.email {
+#email {
     text-decoration: underline;
     color:#686d6d
 }
@@ -53,13 +55,11 @@ main {
 h2 {
     color: #779290;
     text-align: center;
-    margin-top: 30%;
 }
 
 h3 {
     color: #7e808f;
     text-align: center;
-    margin-top: 20%;
     margin-bottom: 10%;
     background-color: #B8BAC8;
     border-radius: 15px;
@@ -69,49 +69,65 @@ h4 {
     text-align: center;
 }
 
-/* .adoption-process {
-    width: 100vw;
+.adoption-process {
     text-align: center;
-    padding-bottom: 30px;
-    margin: 20px;
+    margin: 50px;
+
 }
 
 .adoption-process p {
     width: 70%;
     margin: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.steps {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:repeat(4, 1fr);
-    row-gap: 20px;
-    width: 80%;
-    background-color: #B4D6D3;
-    margin: auto;
+    row-gap: 30px;
+    color: #686d6d;
 }
 
 .step {
     margin-top: 10px;
-} */
+    background-color: #B4D6D3;
+    width: 85%;
+    height: 100%;
+    padding: 10px;
+    margin: auto;
+}
 
 .available-dogs {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     row-gap: 20px;
-    background-color: #ebeeee;
+    background-color: #e9f0f0;
+    width: 85%;
+    height: 70%;
+    margin: auto;
 }
 
 .available-dog {
-    background-color: #779290;
+    background-color: #B4D6D3;;
 }
 
 .available-cats {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
+    row-gap: 20px;
+    background-color: #e9f0f0;
+    width: 85%;
+    height: 70%;
+    margin: auto;
 }
 
 .available-cat {
-    
+    background-color: #B4D6D3;;
+    justify-content: center;
 }
 
 .animal-pic {
@@ -129,3 +145,63 @@ h4 {
    margin-bottom: 20%;
 }
 
+@media (min-width:600px){
+ 
+.steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+    row-gap: 30px;
+} 
+
+.available-dogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    background-color: #ebeeee;
+}
+
+.available-cats {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+}
+
+}
+
+@media (min-width: 1100px) {
+    .introduction {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-row-gap: 15px;
+        background-color: #dde7e6;
+        padding: 20px;
+    }
+    
+    .steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        row-gap: 30px;
+    } 
+
+    .available-dogs {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    }
+
+    .available-cats {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 30px;
+    }
+}
