@@ -1,48 +1,78 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 
 body{
+    min-height: 100vh;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    width: 100%;
-    height: 100px;
-    display: inline-flex;
-    background-color: white;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
-}
-
 .logo{
-    font-size: 30px;
-    font-weight: bold;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+
+nav{
+    height: 6rem;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 100px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     color: black;
 }
 
-.hamburger{
+nav a:hover{
+    border-radius: 30px;
+    color: #AA78A6;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: pink;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.nav-menu ul{
-    display: block;
-    list-style: none;
+.sidebar li{
+    width: 100%;
 }
 
-.nav-menu ul li a{
-    display: block;
-    color: black;
-    font-size: 25px;
-    padding: 10px 25px;
-    border-radius: 50px;
-    transition: 0.2s;
-    margin: 0 5px;
-    list-style: none;
+.sidebar a{
+    width: 100%;
 }
 
 .pic{
@@ -54,11 +84,10 @@ header{
 
 h1{
     display: flex;
-    padding-top: 30px;
+    padding-top: 40px;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 h2{
     display: flex;
     justify-content: center;
@@ -66,7 +95,6 @@ h2{
     padding-top: 50px;
     font-size: 40px;
 }
-
 p{
     display: flex;
     justify-content: center;
@@ -76,11 +104,9 @@ p{
     padding-right: 50px;
     font-size: 25px;
 }
-
 .section{
     background-color: #AA78A6;
 }
-
 .sec2{
     background-color: white;
     display: flex;
@@ -91,7 +117,6 @@ p{
     margin-left: 620px;
     font-size: 60px;
 }
-
 .pet{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -99,23 +124,6 @@ p{
     width: auto;
     justify-content: center;
 }
-
-.icon-container {
-    display: grid;
-    grid-template-columns: repeat(4, 80px);
-    justify-content: center;
-    margin-left: 50px;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-}
-
-.footer-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    font-size: 15px;
-}
-
 .copyright {
     display: flex;
     font-size: 15px;
@@ -129,7 +137,6 @@ p{
     justify-content: center;
     margin-bottom: 50px;
 }
-
 .footer-link:link {
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -138,73 +145,30 @@ p{
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
-
 .footer-link:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
 }
-
 .footer-link:visted:hover {
     color:rgb(0, 0, 0);
-} 
-
-@media screen and (max-width: 1200px) {
-    .logo {
-        width: 250px;
-        padding-left: 100px;
-    }
-
-    .nav-menu {
-        margin-left: 100px;
-    }
-
-    .sec2 {
-        margin-left: 0;
-        justify-content: space-around;
-    }
+}
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    justify-content: center;
+    margin-left: 50px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.footer-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 15px;
 }
 
-@media screen and (max-width: 768px) {
-    .logo {
-        width: 200px;
-        padding-left: 50px;
-    }
-
-    .nav-menu {
-        margin-left: 50px;
-    }
-
-    .sec2 {
-        margin-left: 0;
-        justify-content: space-around;
-    }
-
-    .pet {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        height: 150px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 150px;
-        padding-left: 20px;
-    }
-
-    .nav-menu {
-        margin-left: 20px;
-        font-size: 20px;
-    }
-
-    .sec2 {
-        margin-left: 0;
-        justify-content: space-around;
-    }
-
-    .pet {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        height: 100px;
+@media only screen (max-width: 800px) {
+    .hideOnMobile{
+        display: none;
     }
 }

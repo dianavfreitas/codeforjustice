@@ -1,0 +1,69 @@
+html {
+height: 100%;
+width: 100%;   
+}
+
+
+h1 {
+    color:#AA78A6;
+    text-align: left;
+    font-size: 50px;
+}
+
+.happyDog {
+height: 430px;
+width: 450px;
+margin: auto;
+display: block;
+}
+
+.headerOne {
+text-align: center;
+font-size: 50px
+;
+}
+
+.paragraphOne {
+    text-align:left;
+    color:#AA78A6;
+    
+   
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid: gap 20px;
+}
+
+.conatainer {
+   /* height: 50%;
+   width: 50%; */
+    background-color: #B2FFD6;
+    font-size: 20px;
+    /* float: left; */
+
+}
+h2 {
+text-align:left;
+
+}
+
+.list {
+    font-weight: bold;
+}
+
+/* .dogImg {
+    float:right;
+} */
+
+.meetCoco {
+    background-color: blueviolet;
+    font-size: 20px;
+    /* float:right; */
+}
+
+.toDonate {
+
+    /* float:left; */
+}
