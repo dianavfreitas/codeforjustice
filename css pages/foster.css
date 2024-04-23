@@ -68,31 +68,15 @@ header {
 }
 
 .foster-image-dog {
-    width: 60%;
+    width: 80%;
     margin: auto;
+    padding: 10%;
 }
 
 .foster-image-cat {
-    width: 60%;
-    margin-top: 20px;
+    width: 80%;
+    padding: 10%;
 }
-
-/* .foster-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.foster-image-container {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-} */
 
 .foster-info {
     margin: 20px;
