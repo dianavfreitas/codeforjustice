@@ -7,12 +7,12 @@ const phoneNumber = document.getElementById('form')
 const errorElement = document.getElementById('error')
 
 form.addEventListener('submit', (e) => {
-    let messages = []
+    let email = []
     if (name1.value === '' || name1.value == null){
         messages.push('Name is required')
     }
-    if (messages.length > 0){
-        e.preventDefault()
+    if (email.value === '' || email.value === null){
+        messages.push('Email is required')
         errorElement.innerText = messages.join(', ')
     }
 })
