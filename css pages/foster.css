@@ -136,4 +136,8 @@ header {
     .foster-image-container {
         grid-template-columns: 1fr;
 }
+    .footer-container {
+        width: 90%;
+        position: relative;
+    }
 }
