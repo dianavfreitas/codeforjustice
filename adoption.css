@@ -1,3 +1,8 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #686d6d;
+}
+
 html {
     width: 100%;
 }
@@ -7,25 +12,21 @@ body {
     width: 100%;
     background-color: white;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /*logo*/
 .logo{
-    width: 150px;
-    height: 100px;
-    display: flex;
+    width: 160px;
     position: absolute;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-left: 100px;
 }
 
-/* Navigation Bar */
 nav{
-    height: 6rem;
     background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    
 }
 nav ul{
     width: 100%;
@@ -50,6 +51,10 @@ nav a:hover{
     color: #AA78A6;
 }
 
+.menu-icon {
+    width: 5em;
+}
+
 .sidebar{
     position: fixed;
     top: 0;
@@ -57,7 +62,7 @@ nav a:hover{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: pink;
+    background-color: #B4D6D3;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -185,6 +190,7 @@ h2 {
     background-color: #B4D6D3;;
 }
 
+
 /* Available Cats */
 .available-cats {
     display: grid;
@@ -259,8 +265,13 @@ h2 {
     font-size: 15px;
 }
 
+@media (max-width: 600px) {
+    .nav-bar{
+        display: none;
+    }
+}
 
-@media (min-width:600px){
+@media (min-width:600px) and (max-width: 1023px) {
 .steps {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -283,6 +294,10 @@ h2 {
     row-gap: 20px;
     column-gap: 30px;
 }
+
+.nav-bar {
+    display: none;
+} 
 
 }
 
@@ -316,5 +331,9 @@ h2 {
         grid-template-rows: repeat(2, 1fr);
         row-gap: 20px;
         column-gap: 30px;
+    }
+
+    .button {
+        display: none;
     }
 }
