@@ -167,6 +167,11 @@ h2 {
     padding: 10px;
     margin: auto;
 }
+
+.step :hover {
+    transform: scale(1.2);
+}
+
 /* Available Animals */
 .animal-type {
     color: #7e808f;
@@ -269,6 +274,10 @@ h2 {
     .nav-bar{
         display: none;
     }
+
+    .footer-container-link {
+        grid-template-columns: repeat(5, 60px);
+}
 }
 
 @media (min-width:600px) and (max-width: 1023px) {
