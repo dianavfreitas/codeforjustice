@@ -92,7 +92,6 @@ h1{
     padding: 10px 10px;
     margin: 20px 20px;
     width: 500px;
-    
 }
 
 .form{
@@ -124,6 +123,8 @@ h1{
     outline: 0;
     border-color: px solid #AA78A6;
 }
+
+.formc input:
 
 .formc select{
     display: block;
@@ -273,7 +274,7 @@ h1{
 .formc small{
     color: red;
     position: absolute;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 button{

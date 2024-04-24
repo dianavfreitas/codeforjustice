@@ -38,6 +38,7 @@ function errorMsg(input, msg) {
     const formc = input.parentElement;
     formc.classList.add("error");
     const small = formc.querySelector("small");
+    small.style.visibility = "visible";
     if (!small) {
         const small = document.createElement("small");
         small.innerText = msg;
@@ -60,12 +61,14 @@ function removeErrorMsg(input) {
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
-    if (fullName.value === "") {
-        errorMsg(fullName, "Name is required");
-    } else {
-        removeErrorMsg(fullName);
-        // Additional validation logic for other fields if needed
-    }
+        if (fullName.value === "") {
+        
+         errorMsg(fullName, "Name is required");
+    } 
+    // else {
+    //     removeErrorMsg(fullName);
+    //     // Additional validation logic for other fields if needed
+    // }
 });
 
 form.addEventListener("submit", function(e) {
@@ -104,15 +107,15 @@ form.addEventListener('submit', function(e) {
 
 let isValid = true;
 
-input.forEach(input => {
-    const parent = input.parentNode;
-    const errorMessage = parent.querySelector('small');
-    if(input.value.trim() === ""){
-        errorMessage.style.visibility = 'visible';
-        isValid = false;
-    } else {
-        errorMessage.style.visibility = 'hidden';
-    }
-});
+// input.forEach(input => {
+//     const parent = input.parentNode;
+//     const errorMessage = parent.querySelector('small');
+//     if(input.value.trim() === ""){
+//         errorMessage.style.visibility = 'visible';
+//         isValid = false;
+//     } else {
+//         errorMessage.style.visibility = 'hidden';
+//     }
+// });
 
 
