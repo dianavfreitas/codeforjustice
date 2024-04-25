@@ -145,7 +145,7 @@ nav .nav-bar a:hover{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: pink;
+    background-color:#B4D6D3;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -157,6 +157,12 @@ nav .nav-bar a:hover{
 }
 .sidebar a{
     width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a:hover {
+    color: #AA78A6;
 }
 .button{
     display: none;
