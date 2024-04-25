@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="adoption.css">
 </head>
 
-<nav>
-    <img src="logo.png" class="logo">
-    <ul class="sidebar">
-        <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li class="hideOnMobile"><a href="index.html">Home</a></li>
-        <li class="hideOnMobile"><a href="adoption.html">Adopt</a></li>
-        <li class="hideOnMobile"><a href="foster.html">Foster</a></li>
-        <li class="hideOnMobile"><a href="donate.html">Donate</a></li>
-        <li class="hideOnMobile"><a href="contant.html">Contact</a></li>
-    </ul>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Adopt</a></li>
-        <li><a href="#">Foster</a></li>
-        <li><a href="#">Donate</a></li>
-        <li><a href="#">Contact</a></li>
-        <li onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-    </ul>
-    <div class="menu-icon"></div>
-</nav>
-
 <body>
+
+    <nav>
+        <img src="images/pawsitivelyrescued.png" class="logo" al="pawsetively rescued logo">
+        <ul class="sidebar">
+            <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="adoption.html">Adopt</a></li>
+            <li class="hideOnMobile"><a href="foster.html">Foster</a></li>
+            <li class="hideOnMobile"><a href="donate.html">Donate</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="nav-bar"><a href="index.html">Home</a></li>
+            <li class="nav-bar"><a href="adoption.html">Adopt</a></li>
+            <li class="nav-bar"><a href="foster.html">Foster</a></li>
+            <li class="nav-bar"><a href="donate.html">Donate</a></li>
+            <li class="nav-bar"><a href="contact.html">Contact</a></li>
+            <li class="button" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <div class="menu-icon"></div>
+        </ul>
+        <!-- <div class="menu-icon"></div> -->
+    </nav>
+
     <header>
         <h1>Adopt Your Furever Friend!</h1>
     </header>
@@ -36,7 +38,7 @@
     <main>
         <div class="introduction">
             <div class="intro-div">
-                <img id="dojo" src="Dojo-top.png" alt="dojo">
+                <img id="dojo" src="images/Dojo-top.png" alt="dojo">
             </div>
             <div class="intro-div">
                 <p class="intro-text">
@@ -55,7 +57,7 @@
 
         <!-- Adoption Process -->
         <section class="adoption-process">
-        <h2>Adoption Process</h2>
+        <h2 class="process-header">Adoption Process</h2>
         <div class="steps">
                 <div class="step" id="step1">
                     <h4 class="step-headers">Step 1</h4>
@@ -97,13 +99,13 @@
 
         <!-- Available Pets-->
         <div class="available-pets">
-            <h2>Available Pets</h2>
+            <h2 class="available-header">Available Pets</h2>
 
             <!-- Available Dogs-->
             <h3 class="animal-type">Dogs</h3>
             <div class="available-dogs">
                 <div class="available-dog">
-                    <img class="animal-pic" src="cincinnati.png" alt="Available dog named Cincinnati">
+                    <img class="animal-pic" src="images/cincinnati.png" alt="Available dog named Cincinnati">
                     <section class="dog-info">
                         <p class="name">Cincinatti</p>
                         <p>Mixed Breed, Large (over 44 lbs fully grown)</p>
@@ -112,7 +114,7 @@
                     </section>
                 </div>
                 <div class="available-dog">
-                    <img class="animal-pic" src="london.png" alt="Available dog named London">
+                    <img class="animal-pic" src="images/london.png" alt="Available dog named London">
                     <section class="dog-info">
                         <p class="name">London</p>
                         <p>Mixed Breed, Large (over 44lbs fully grown)</p>
@@ -121,7 +123,7 @@
                     </section>
                 </div>
                 <div class="available-dog">
-                    <img class="animal-pic" src="Omar.png" alt="Available dog named Omar.">
+                    <img class="animal-pic" src="images/Omar.png" alt="Available dog named Omar.">
                     <section class="dog-info">
                         <p class="name">Omar</p>
                         <p>Mixed Breed, Large (over 44lbs fully grown)</p>
@@ -130,7 +132,7 @@
                     </section>
                 </div>
                 <div class="available-dog">
-                    <img class="animal-pic" src="rhodes.png" alt="Available dog named Rhodes">
+                    <img class="animal-pic" src="images/rhodes.png" alt="Available dog named Rhodes">
                     <section class="dog-info">
                     <p class="name">Rhodes</p>
                         <p>Mixed Breed, Medium (up to 44lbs fully grown)</p>
@@ -139,7 +141,7 @@
                     </section>
                 </div>
                 <div class="available-dog">
-                    <img class="animal-pic" src="tinkerbell.png" alt="Available dog named Tinkerbell">
+                    <img class="animal-pic" src="images/tinkerbell.png" alt="Available dog named Tinkerbell">
                     <section class="dog-info">
                     <p class="name">Tinkerbell</p>
                         <p>Mixed Breed, Medium (up to 44lbs fully grown)</p>
@@ -148,7 +150,7 @@
                     </section>
                 </div>
                 <div class="available-dog">
-                    <img class="animal-pic" src="zoya.png" alt="Available dog named Zoya">
+                    <img class="animal-pic" src="images/zoya.png" alt="Available dog named Zoya">
                     <section class="dog-info">
                     <p class="name">Zoya</p>
                         <p>Mixed Breed, Medium (up to 44lbs fully grown)</p>
@@ -162,7 +164,7 @@
             <!-- Available Cats-->
             <div class="available-cats">
                 <div class="available-cat">
-                    <img class="animal-pic" src="ash.png" alt="Available cat named Ash">
+                    <img class="animal-pic" src="images/ash.png" alt="Available cat named Ash">
                     <section class="cat-info">
                         <p class="name">Ash</p>
                         <p>Domestic Shorthait</p>
@@ -171,7 +173,7 @@
                     </section>
                 </div>
                 <div class="available-cat">
-                    <img class="animal-pic" src="bethany.png" alt="Available cat named Bethany">
+                    <img class="animal-pic" src="images/bethany.png" alt="Available cat named Bethany">
                     <section class="cat-info">
                         <p class="name">Bethany</p>
                         <p>Domestic Medium Hair</p>
@@ -180,7 +182,7 @@
                     </section>
                 </div>
                 <div class="available-cat">
-                    <img class="animal-pic" src="mrsausage.png" alt="Available cat named Mr.Sausage">
+                    <img class="animal-pic" src="images/mrsausage.png" alt="Available cat named Mr.Sausage">
                     <section class="cat-info">
                         <p class="name">Mr.Sausage</p>
                         <p>Domestic Shorthair</p>
@@ -189,7 +191,7 @@
                     </section>
                 </div>
                 <div class="available-cat">
-                    <img class="animal-pic" src="raindrop.png" alt="Available cat named Raindrop">
+                    <img class="animal-pic" src="images/raindrop.png" alt="Available cat named Raindrop">
                     <section class="cat-info">
                         <p class="name">Rain Drop</p>
                         <p>Domestic Shorthair</p>
@@ -198,7 +200,7 @@
                     </section>
                 </div>
                 <div class="available-cat">
-                    <img class="animal-pic" src="tweet.png" alt="Available cat named Tweet">
+                    <img class="animal-pic" src="images/tweet.png" alt="Available cat named Tweet">
                     <section class="cat-info">
                         <p class="name">Tweet</p>
                         <p>Domestic Shorthair</p>
