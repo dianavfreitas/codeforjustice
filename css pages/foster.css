@@ -6,7 +6,7 @@ h2 {
     color: #AA78A6;
 }
 
-p {
+.info-content {
     color: #686D6D;
     line-height: 2em;
 }
@@ -51,12 +51,13 @@ header {
     margin: 20px;
     margin-top: 5px;
 } 
-
+/* FOOTER  */
 .copyright {
     display: flex;
     font-size: 15px;
     justify-content: center;
     padding: 15px;
+    color: #686D6D;
 }
 
 .footer-container-link {
@@ -67,17 +68,16 @@ header {
 }
 
 .footer-link:link {
-    color: rgb(0, 0, 0);
+    color:black ;
     text-decoration: none;
 }
-.footer-link-visted {
-    color: rgb(0, 0, 0);
+.footer-link {
+    color:black;
     text-decoration: none;
 }
 
-.footer-link:hover {
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
+.footer-link:hover { 
+    color:#AA78A6;
 }
 
 .footer-link:visted:hover {
@@ -99,6 +99,29 @@ header {
     margin-top: 10px;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+.icon-footer:hover{
+	box-shadow: 0 0 0 4px rgba(255,255,255,1);
+	transition: background 0.2s, color 0.2s;	
+}
+
+.icon-footer:hover {
+	background: rgba(255,255,255,1);
+	color: #64bb5d;
+}
+
+.icon-footer:hover:before {
+	animation: spinAround 2s linear infinite;
+}
+
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 /*NAV BAR CSS STARTS HERE*/
