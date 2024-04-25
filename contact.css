@@ -75,9 +75,11 @@ nav a:hover{
     width: 100%;
 }
 
-/* .box{
-    padding-left: 450px;
-} */
+.box{
+    /* padding-left: 480px; */
+    display: flex;
+    justify-content: center;
+}
 
 h1{
     text-align: center;
@@ -149,6 +151,14 @@ h1{
     visibility: hidden;
 }
 
+.formc select{
+    display: block;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+}
 
 button{
     font-size: 16px;
@@ -204,6 +214,14 @@ button:hover{
     justify-content: center;
     margin-top: 10px;
     font-size: 15px;
+}
+
+@media (min-width: 320px) {
+    .box {
+        display: flex;
+        justify-content: center;
+        /* margin-left: 300px; */
+    }
 }
 
 @media only screen (max-width: 600px){
@@ -274,7 +292,7 @@ h1{
 .formc small{
     color: red;
     position: absolute;
-    /* visibility: hidden; */
+    visibility: show;
 }
 
 button{
@@ -350,5 +368,11 @@ button{
     }
     .button {
         display: none;
+    }
+}
+
+@media (min-width: 320px) {
+    .form {
+
     }
 }
