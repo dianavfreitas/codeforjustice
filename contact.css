@@ -126,8 +126,6 @@ h1{
     border-color: px solid #AA78A6;
 }
 
-.formc input:
-
 .formc select{
     display: block;
     border-radius: 10px;
@@ -368,11 +366,5 @@ button{
     }
     .button {
         display: none;
-    }
-}
-
-@media (min-width: 320px) {
-    .form {
-
     }
 }
