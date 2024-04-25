@@ -1,22 +1,32 @@
-body {
-    background-color: white;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #686d6d;
 }
 
-.logo{
-    width: 150px;
-    height: 100px;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
+html {
+    width: 100%;
 }
-nav{
-    height: 6rem;
+
+/* body */
+body {
+    width: 100%;
     background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/*logo*/
+.logo{
+    width: 160px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav{
+    background-color: white;
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    
 }
 nav ul{
     width: 100%;
@@ -41,6 +51,10 @@ nav a:hover{
     color: #AA78A6;
 }
 
+.menu-icon {
+    width: 5em;
+}
+
 .sidebar{
     position: fixed;
     top: 0;
@@ -48,7 +62,7 @@ nav a:hover{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: pink;
+    background-color: #B4D6D3;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -62,6 +76,7 @@ nav a:hover{
     width: 100%;
 }
 
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -85,6 +100,7 @@ main {
     width: 100%;
 }
 
+/*Intro to adoption page */
 .introduction {
     display: grid;
     grid-template-columns: 1fr;
@@ -113,17 +129,11 @@ main {
 h2 {
     color: #779290;
     text-align: center;
+    margin: 5%;
 }
 
-.animal-type {
-    color: #7e808f;
-    text-align: center;
-    margin-bottom: 10%;
-    background-color: #B8BAC8;
-    border-radius: 15px;
-}
-
-h4 {
+/* Adoption Process */
+.step-headers {
     text-align: center;
 }
 
@@ -138,6 +148,7 @@ h4 {
     margin: auto;
     width: 80%;
     margin: auto;
+    margin-bottom: 5%;
 }
 
 .steps {
@@ -157,12 +168,24 @@ h4 {
     margin: auto;
 }
 
+.step :hover {
+    transform: scale(1.2);
+}
+
+/* Available Animals */
+.animal-type {
+    color: #7e808f;
+    text-align: center;
+    margin: 5%;
+    border-radius: 15px;
+}
+
+/* Available Dogs */
 .available-dogs {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     row-gap: 20px;
-    background-color: #e9f0f0;
     width: 85%;
     height: 70%;
     margin: auto;
@@ -172,15 +195,17 @@ h4 {
     background-color: #B4D6D3;;
 }
 
+
+/* Available Cats */
 .available-cats {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     row-gap: 20px;
-    background-color: #e9f0f0;
     width: 85%;
     height: 70%;
     margin: auto;
+    margin-bottom: 10%;
 }
 
 .available-cat {
@@ -189,7 +214,7 @@ h4 {
 }
 
 .animal-pic {
-    width: 45%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,9 +270,17 @@ h4 {
     font-size: 15px;
 }
 
+@media (max-width: 600px) {
+    .nav-bar{
+        display: none;
+    }
 
-@media (min-width:600px){
- 
+    .footer-container-link {
+        grid-template-columns: repeat(5, 60px);
+}
+}
+
+@media (min-width:600px) and (max-width: 1023px) {
 .steps {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -261,7 +294,6 @@ h4 {
     grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
     column-gap: 30px;
-    background-color: #ebeeee;
 }
 
 .available-cats {
@@ -272,6 +304,10 @@ h4 {
     column-gap: 30px;
 }
 
+.nav-bar {
+    display: none;
+} 
+
 }
 
 @media (min-width: 1100px) {
@@ -280,8 +316,8 @@ h4 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         grid-row-gap: 15px;
-        background-color: #dde7e6;
         padding: 20px;
+        background-color: #ebeeee;
     }
     
     .steps {
@@ -304,5 +340,9 @@ h4 {
         grid-template-rows: repeat(2, 1fr);
         row-gap: 20px;
         column-gap: 30px;
+    }
+
+    .button {
+        display: none;
     }
 }
