@@ -10,7 +10,7 @@
 </head>
 <header> 
     <nav>
-        <img src="logo.png" class="logo">
+        <img src="./images/logo.png" class="logo">
         <ul class="sidebar">
             <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             <li class="hideOnMobile"><a href="#">Home</a></li>
@@ -55,12 +55,12 @@
 
             <div class="howto-donate">
             <h2> How to Donate</h2>
-            <ol class="main-list">
-                <li>One time Donation: Every little bit Helps! Donations can be sent to 3950 Rockwell Lane Charlotte NC
-                    27801</li>
+            <ul class="main-list">
+                <li>One time Donation: Every little bit Helps! Donations can be sent to 3950 Rockwell Lane, Charlotte, NC
+                    27801.</li>
                 <li>Material Donations: We also welcome donations of food, toys and other supplies.</li>
                 <p id="wishlist">Wishlist </p>
-                <ul class="sub-list"  
+                <ul class="sub-list"> 
                     <li>Dog/cat food</li>
                     <li>Dog/cat treats</li>
                     <li>New dog toys</li>
@@ -72,16 +72,35 @@
                 <li>Volunteer Your time: It doesn't have to be a monetary donation,your time is extremley valuable to us.
                     Learn more about volunteering: <a href= foster.html> Our Volunteer Page</a>
                 </li>
-            </ol>
+            </ul>
             </div>
     
         <div class="meetCoco">
             <img class="happyDog" src="buiscuit.jpg">
             </li>
 
-            <h2> Meet Biscuit</h2>
-            <p>Biscuit, a mutt, was rescued in poor health, struggling to survive. Thanks to generous donations, our team at Pawsitive Rescued, provided the medical care and rehabilitation she needed. Her transformation caught the eye of a local family at an adoption event, and it was love at first sight. Now, Bella enjoys sunny days and happy walks at the park with her new family. Her story showcases the powerful impact of every donation, helping us give dogs like Biscuit a second chance at a happy life.
+            <h2 class="leftHeader">Meet Biscuit</h2>
+            <p>Biscuit, a mutt, was rescued in poor health, struggling to survive. Thanks to generous donations, our team at Pawsitively Rescued provided the medical care and rehabilitation she needed. Her transformation caught the eye of a local family at an adoption event, and it was love at first sight. Now, Biscuit enjoys sunny days and happy walks at the park with her new family. Her story showcases the powerful impact of every donation, helping us give dogs like Biscuit a second chance at a happy life.
             </p>
+            <h2>Make your Donation here to give other dogs a chance like Biscuit did </h2>
+            <div>
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                
+                  <input type="submit" value="Submit">
+                </form>
+              </div> 
         </div>
     </div>
        
