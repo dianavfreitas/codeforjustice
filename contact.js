@@ -46,7 +46,7 @@ function errorMsg(input, msg) {
     } else {
         small.innerText = msg;
     }
-    input.classList.add("error-input"); // Add a class to change input box to red
+    input.classList.add("error-input");
 };
 
 function removeErrorMsg(input) {
@@ -56,7 +56,7 @@ function removeErrorMsg(input) {
     if (small) {
         small.remove();
     }
-    input.classList.remove("error-input"); // Remove the class to revert input box styling
+    input.classList.remove("error-input");
 };
 
 form.addEventListener("submit", function(e) {
@@ -77,7 +77,7 @@ form.addEventListener("submit", function(e) {
         errorMsg(email, "Email is required");
     } else {
         removeErrorMsg(email);
-        // Additional validation logic for other fields if needed
+        
     }
 });
 
@@ -87,7 +87,7 @@ form.addEventListener("submit", function(e) {
         errorMsg(phone, "Phone number is required");
     } else {
         removeErrorMsg(phone);
-        // Additional validation logic for other fields if needed
+       
     }
 });
 
