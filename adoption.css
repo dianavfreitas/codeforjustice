@@ -22,33 +22,120 @@ body {
     align-items: center;
 }
 
-nav{
-    background-color: white;
-    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
-    width: 100%;
-    color: black;
-    
-}
-nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-nav li{
-    height: 100px;
-}
+nav{ 
+
+    height: 6rem; 
+
+    background-color: white; 
+
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); 
+
+    display: flex; 
+
+    align-items: center; 
+
+} 
+
+nav ul{ 
+
+    width: 100%; 
+
+    list-style: none; 
+
+    display: flex; 
+
+    justify-content: flex-end; 
+
+    align-items: center; 
+
+} 
+
+nav li{ 
+
+    height: 100px; 
+
+} 
+
+nav .nav-bar a{ 
+
+    height: 100%; 
+
+    padding: 0 30px; 
+
+    text-decoration: none; 
+
+    display: flex; 
+
+    align-items: center; 
+
+    color: black; 
+
+} 
+
+nav .nav-bar a:hover{ 
+
+    border-radius: 30px; 
+
+    color: #AA78A6; 
+
+} 
+
+.sidebar{ 
+
+    position: fixed; 
+
+    top: 0; 
+
+    right: 0; 
+
+    height: 100vh; 
+
+    width: 250px; 
+
+    z-index: 999; 
+
+    background-color: #B4D6D3; 
+
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); 
+
+    display: none; 
+
+    flex-direction: column; 
+
+    align-items: flex-start; 
+
+    justify-content: flex-start; 
+
+} 
+
+.sidebar li{ 
+
+    width: 100%; 
+
+} 
+
+.sidebar a{ 
+
+    width: 100%; 
+
+    text-decoration: none; 
+
+    color: black; 
+
+} 
+
+.sidebar a:hover { 
+
+    color: #AA78A6; 
+
+} 
+
 nav a{
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
-}
-nav a:hover{
-    border-radius: 30px;
     color: #AA78A6;
 }
 
@@ -56,26 +143,8 @@ nav a:hover{
     width: 5em;
 }
 
-.sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: #B4D6D3;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-.sidebar li{
-    width: 100%;
-}
-.sidebar a{
-    width: 100%;
-}
+
+
 
 /* Header */
 header {
