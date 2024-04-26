@@ -112,15 +112,6 @@ p{
     background-color: #B4D6D3;
     box-shadow: rgba(0, 0, 0, 0.4);
 }
-/* .sec2{
-    background-color: white;
-    display: flex;
-    width: 200px;
-    gap: 50px;
-    margin-left: 220px;
-    font-size: 60px;
-    jus
-} */
 .sec2 {  
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -130,9 +121,7 @@ p{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 50px;
-    /* justify-content: center; */
-    /* grid-auto-flow: row; */
-    /* grid-template-areas: ". . . . ."; */
+    
   }
   
 .pet{
@@ -143,9 +132,6 @@ p{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     gap: 50px;
-    /* grid-auto-flow: row; */
-    /* grid-template-areas: ". . . . ."; */
-
 }
 
 .sec3{
@@ -178,11 +164,66 @@ p{
 
 .footer-link:hover { 
     color:#AA78A6;
+} */
+
+/* .copyright {
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    padding: 15px;
+    color: #686D6D;
+} */
+
+/* .footer-container-link {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    justify-content: center;
+    margin-bottom: 50px;
+} */
+
+/* .footer-link:link {
+    color:black ;
+    text-decoration: none;
+}
+.footer-link {
+    color:black;
+    text-decoration: none;
 }
 
-/* .footer-link:visited:hover {
+.footer-link:hover { 
+    color:#AA78A6;
+}
+
+.footer-link:visted:hover {
     color:rgb(0, 0, 0);
-}  */
+} 
+
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    column-gap: 20px;
+    height: 35px;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.icon-container a:hover .icon-footer {
+    fill: #AA78A6;
+}
+
+.icon-container a:hover svg {
+    height: 40px;
+    width: 40px;
+}
 
 .icon-container {
     display: grid;
@@ -200,6 +241,7 @@ p{
     text-transform: uppercase;
 }
 
+/*  */
 
 /* USE FOR ONLY TABLET*/
 /* USE ONLY FOR NAV BAR*/
@@ -212,13 +254,3 @@ p{
     nav .nav-bar {
         display: none;
     }
-
-    /* .pet{
-        margin-top: 100px;
-        height: 220px;
-        width: auto;
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: repeat(5, 1fr);
-    }
-} */
