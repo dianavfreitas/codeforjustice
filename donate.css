@@ -229,7 +229,7 @@ nav .nav-bar a:hover{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: #B4D6D3;
+    background-color: #779290;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -365,7 +365,7 @@ input[type=text], select {
   
   input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color:#686D6D;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -375,7 +375,7 @@ input[type=text], select {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #768d8d;
   }
   
   .formDonate {
@@ -383,6 +383,7 @@ input[type=text], select {
     background-color: #f2f2f2;
     padding: 20px;
   }
+ 
 
 @media (max-width: 600px) {
     /* .nav-bar {
