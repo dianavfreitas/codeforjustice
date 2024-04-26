@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 body{
     min-height: 100vh;
     background-color: white;
@@ -74,6 +75,10 @@ nav .nav-bar a:hover{
 }
 /*NAV BAR CSS ENDS HERE*/
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 
 .pic{
     position: absolute;
@@ -82,6 +87,10 @@ nav .nav-bar a:hover{
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 h1{
     position: relative;
     display: flex;
@@ -111,6 +120,10 @@ p{
     background-color: #B4D6D3;
     box-shadow: rgba(0, 0, 0, 0.4);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 /* .sec2{
     background-color: white;
     display: flex;
@@ -120,6 +133,10 @@ p{
     font-size: 60px;
     jus
 } */
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .sec2 {  
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -144,11 +161,15 @@ p{
     gap: 50px;
     /* grid-auto-flow: row; */
     /* grid-template-areas: ". . . . ."; */
+
 }
+
 .sec3{
     background-color: #B4D6D3;
     margin-bottom: 100px;
+
 }
+
 .copyright {
     display: flex;
     font-size: 15px;
@@ -170,12 +191,15 @@ p{
     color:black;
     text-decoration: none;
 }
+
 .footer-link:hover { 
     color:#AA78A6;
 }
+
 /* .footer-link:visited:hover {
     color:rgb(0, 0, 0);
 }  */
+
 .icon-container {
     display: grid;
     grid-template-columns: repeat(4, 30px);
@@ -204,6 +228,7 @@ p{
     nav .nav-bar {
         display: none;
     }
+
     /* .pet{
         margin-top: 100px;
         height: 220px;
