@@ -1,5 +1,10 @@
 html {
+    margin: 0;
     height: 100%;
+    min-width: 120%;
+}
+
+body {
     width: 100%;
 }
 
@@ -249,7 +254,7 @@ nav .nav-bar a:hover{
 /*NAV BAR CSS ENDS HERE*/
 
 /* footer */
-.copyright {
+/* .copyright {
     display: flex;
     font-size: 15px;
     justify-content: center;
@@ -296,8 +301,59 @@ nav .nav-bar a:hover{
     justify-content: center;
     margin-top: 10px;
     font-size: 15px;
+} */
+
+/* FOOTER  */
+
+.copyright {
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    justify-content: center;
+    padding: 15px;
+    color:#686D6D;
 }
 
+.footer-container-link {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footer-link:link {
+    color:black ;
+    text-decoration: none;
+}
+.footer-link {
+    color:black;
+    text-decoration: none;
+}
+
+.footer-link:hover { 
+    color:#AA78A6;
+}
+
+.footer-link:visted:hover {
+    color:rgb(0, 0, 0);
+} 
+
+.icon-container {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    column-gap: 20px;
+}
+
+.footer-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
