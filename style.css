@@ -9,20 +9,20 @@ body{
     background-color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .logo{
-    width: 160px;
-    position: absolute;
-    justify-content: flex-start;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-
 nav{
+    height: 6rem;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    display: flex;
+    align-items: center;
 }
-
 nav ul{
     width: 100%;
     list-style: none;
@@ -30,12 +30,10 @@ nav ul{
     justify-content: flex-end;
     align-items: center;
 }
-
 nav li{
     height: 100px;
 }
-
-nav a{
+nav .nav-bar a{
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -43,16 +41,10 @@ nav a{
     align-items: center;
     color: black;
 }
-
-nav a:hover{
+nav .nav-bar a:hover{
     border-radius: 30px;
     color: #AA78A6;
 }
-
-.menu-icon {
-    width: 5em;
-}
-
 .sidebar{
     position: fixed;
     top: 0;
@@ -67,14 +59,22 @@ nav a:hover{
     align-items: flex-start;
     justify-content: flex-start;
 }
-
 .sidebar li{
     width: 100%;
 }
-
 .sidebar a{
     width: 100%;
+    text-decoration: none;
+    color: black;
 }
+.sidebar a:hover {
+    color: #AA78A6;
+}
+.button{
+    display: none;
+}
+/*NAV BAR CSS ENDS HERE*/
+
 
 .pic{
     position: absolute;
@@ -84,15 +84,18 @@ nav a:hover{
 }
 
 h1{
+    position: relative;
     display: flex;
-    padding-top: 40px;
+    font-size: 70px;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    z-index: 5;
+    padding-top: 280px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3{
     display: flex;
     justify-content: center;
-    margin-top: 600px;
+    margin-top: 300px;
     padding-top: 50px;
     font-size: 30px;
 }
@@ -105,34 +108,50 @@ p{
     padding-right: 50px;
     font-size: 20px;
 }
-
 .section{
     background-color: #B4D6D3;
-    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.4);
 }
-.sec2{
+/* .sec2{
     background-color: white;
     display: flex;
-    justify-content: center;
     width: 200px;
-    height: 500px;
     gap: 50px;
-    margin-left: 620px;
+    margin-left: 220px;
     font-size: 60px;
-}
+    jus
+} */
+.sec2 {  
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr;
+    gap: 40px;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    /* justify-content: center; */
+    /* grid-auto-flow: row; */
+    /* grid-template-areas: ". . . . ."; */
+  }
+  
 .pet{
     margin-top: 100px;
-    height: 220px;
-    width: auto;
-    justify-content: center;
+    height: 300px;
+    /* width: auto; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 50px;
+    /* grid-auto-flow: row; */
+    /* grid-template-areas: ". . . . ."; */
+
 }
 
 .sec3{
     background-color: #B4D6D3;
     margin-bottom: 100px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4);
+
 }
 
 .copyright {
@@ -140,8 +159,8 @@ p{
     font-size: 15px;
     justify-content: center;
     padding: 15px;
+    color: #686D6D;
 }
-
 .footer-container-link {
     display: grid;
     grid-template-columns: repeat(5, 100px);
@@ -149,37 +168,57 @@ p{
     margin-bottom: 50px;
 }
 .footer-link:link {
-    color: rgb(0, 0, 0);
+    color:black ;
     text-decoration: none;
 }
-.footer-link-visted {
-    color: rgb(0, 0, 0);
+.footer-link {
+    color:black;
     text-decoration: none;
 }
-.footer-link:hover {
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
+
+.footer-link:hover { 
+    color:#AA78A6;
 }
-.footer-link:visted:hover {
+
+/* .footer-link:visited:hover {
     color:rgb(0, 0, 0);
-}
+}  */
+
 .icon-container {
     display: grid;
-    grid-template-columns: repeat(4, 80px);
+    grid-template-columns: repeat(4, 30px);
     justify-content: center;
-    margin-left: 50px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #b5b5b5;
     padding-top: 10px;
+    column-gap: 20px;
 }
 .footer-header {
     display: flex;
     justify-content: center;
     margin-top: 10px;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
-@media only screen (max-width: 800px) {
-    .hideOnMobile{
+
+/* USE FOR ONLY TABLET*/
+/* USE ONLY FOR NAV BAR*/
+@media (max-width: 768px) {
+    .button{
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+    }
+    nav .nav-bar {
         display: none;
     }
-}
+
+    /* .pet{
+        margin-top: 100px;
+        height: 220px;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(5, 1fr);
+    }
+} */
