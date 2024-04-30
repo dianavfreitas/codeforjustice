@@ -372,3 +372,9 @@ display: none;
         gap: 0;
     }
 }
+.bones {
+    background-image: url(../images/background.png);
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
